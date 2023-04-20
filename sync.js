@@ -29,7 +29,7 @@ function csvToJson(csv, separator=",") {
 
 async function run() {
   // fetch csv file
-  const response = await fetch('https://raw.githubusercontent.com/ryanphung/chinese-hanviet-cognates/master/outputs/chinese-hanviet-cognates.tsv')
+  const response = await fetch('https://raw.githubusercontent.com/leonguyen52/chinese-hanviet-api/master/ModernSino-Vietnamese-HanVietCognatesDictionary.tsv')
   const csv = await response.text()
   const json = {
     "words": csvToJson(csv, "\t")
