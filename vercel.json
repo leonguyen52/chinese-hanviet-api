@@ -1,6 +1,6 @@
 {
   "functions": {
-    "server.js": {
+    "api/server.js": {
       "memory": 1024,
       "includeFiles": "full_db_tudon_tughep.json"
     }
@@ -8,7 +8,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "server.js"
+      "destination": "api/server.js"
     }
   ]
 }
