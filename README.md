@@ -1,15 +1,17 @@
 ## Overview
 
-An API built using [json-server](https://github.com/typicode/json-server) based on the template [json-server-heroku](https://github.com/jesperorb/json-server-heroku) that allows you to look up Chinese and Han Viet cognates based on the data from [chinese-hanviet-cognates](https://github.com/ryanphung/chinese-hanviet-cognates).
+An API built using [json-server](https://github.com/typicode/json-server) that allows you to look up Chinese and Han Viet cognates, this original idea is started by [ryanphung](https://github.com/ryanphung) and I updated it to match my own requirements with new database.
 
-I created it for personal usage in my Anki deck, where I can display the list of Hanviet words for every Chinese character that I learn.
+It will be divided into 2 type "tughep" (2 chinese words) and "tudon" (single chinese word) while looking up
 
 ## Demo
 
-* https://chinese-hanviet-api.herokuapp.com/words?word_like=可
-* https://chinese-hanviet-api.herokuapp.com/words?hanviet=trạng%20thái
+* https://xxx.herokuapp.com/tughep?word_like=可
+* https://xxx.herokuapp.com/tughep?hanviet=trạng%20thái
+* https://xxx.herokuapp.com/tudon?word_like=可
+* https://xxx.herokuapp.com/tudon?hanviet=trạng%20thái
 
-## Setting up
+## Setting up locally
 
 1 . Install dependencies
 
@@ -84,4 +86,5 @@ heroku logs --tail
 
 ---
 
-For different ways to deploy the project, refer to the original [template](https://github.com/jesperorb/json-server-heroku)
+## Deploy to **Vercel**
+Please check on my another version for [Vercel](https://github.com/leonguyen52/chinese-hanviet-api-vercel)
